@@ -51,6 +51,11 @@ a[href="#"] {
     margin-inline: 3.125rem;
 } 
 
+a[href="#"]:hover {
+    border-bottom: solid 0.3rem var(--secondary-color);
+    transition: border-bottom 0.1s ease-in-out 0s;
+}
+
 .nav__list {
     display: flex;
     list-style: none;
@@ -103,6 +108,10 @@ a[href="#"] {
     align-content: center;
     margin-inline: min(6vw, 4rem);
     /* margin-inline: 5.3vw; */
+}
+
+.main__text__button:hover {
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 1200px) {
