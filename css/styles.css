@@ -9,6 +9,8 @@
     --primary-color: #181719;
     --secondary-color: #ffffff;
     --exp-color: #949AAB;
+    --credit-color: #a9a9a9;
+    --person-description-color: #828282;
 }
 
 body {
@@ -148,7 +150,7 @@ a[href="#"]:hover {
     font-family: "Montserrat", sans-serif;
     font-size: 0.75rem;
     font-weight: 500;
-    color: #828282;
+    color: var(--person-description-color);
 }
 
 .card__description {
@@ -157,6 +159,20 @@ a[href="#"]:hover {
     font-size: 1.5rem;
     margin-inline: 2rem;
     margin-bottom: 2rem;
+}
+
+.credit {
+    color: var(--credit-color);
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+.credit > a {
+    color: inherit;
+    font-size: inherit;
+    font-weight: 800;
 }
 
 @media only screen and (max-width: 1300px) {
